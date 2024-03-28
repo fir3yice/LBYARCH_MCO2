@@ -1,7 +1,10 @@
 ﻿  mco2_b.c
-D:\_GitRepos\LBYARCH_MCO2\LBYARCH_MCO2\mco2_b.c(19,37): warning C4244: 'function': conversion from '__int64' to 'size_t', possible loss of data
-D:\_GitRepos\LBYARCH_MCO2\LBYARCH_MCO2\mco2_b.c(20,37): warning C4244: 'function': conversion from '__int64' to 'size_t', possible loss of data
-D:\_GitRepos\LBYARCH_MCO2\LBYARCH_MCO2\mco2_b.c(21,37): warning C4244: 'function': conversion from '__int64' to 'size_t', possible loss of data
-D:\_GitRepos\LBYARCH_MCO2\LBYARCH_MCO2\mco2_b.c(22,38): warning C4244: 'function': conversion from '__int64' to 'size_t', possible loss of data
+D:\_GitRepos\LBYARCH_MCO2\LBYARCH_MCO2\mco2_b.c(26,41): warning C4244: 'function': conversion from '__int64' to 'size_t', possible loss of data
+D:\_GitRepos\LBYARCH_MCO2\LBYARCH_MCO2\mco2_b.c(27,41): warning C4244: 'function': conversion from '__int64' to 'size_t', possible loss of data
+D:\_GitRepos\LBYARCH_MCO2\LBYARCH_MCO2\mco2_b.c(28,41): warning C4244: 'function': conversion from '__int64' to 'size_t', possible loss of data
+D:\_GitRepos\LBYARCH_MCO2\LBYARCH_MCO2\mco2_b.c(29,42): warning C4244: 'function': conversion from '__int64' to 'size_t', possible loss of data
+D:\_GitRepos\LBYARCH_MCO2\LBYARCH_MCO2\mco2_b.c(55,22): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+D:\_GitRepos\LBYARCH_MCO2\LBYARCH_MCO2\mco2_b.c(70,24): warning C4244: 'function': conversion from '__int64' to 'int', possible loss of data
+D:\_GitRepos\LBYARCH_MCO2\LBYARCH_MCO2\mco2_b.c(19,13): warning C4101: 'temp': unreferenced local variable
 mco2_b.obj : error LNK2001: unresolved external symbol _asm_domath
 D:\_GitRepos\LBYARCH_MCO2\Release\LBYARCH_MCO2.exe : fatal error LNK1120: 1 unresolved externals

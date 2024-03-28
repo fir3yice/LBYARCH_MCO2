@@ -138,11 +138,15 @@
       <FileType>Document</FileType>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\_GitRepos\LBYARCH_MCO2\nasm -f win64 asmfunc.asm</Command>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">asmfunc.obj</Outputs>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\_GitRepos\LBYARCH_MCO2\LBYARCH_MCO2 nasm –f win64 asmfunc.asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\_GitRepos\LBYARCH_MCO2\nasm -f win64 asmfunc.asm</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">asmfunc.obj</Outputs>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="mco2_b.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C_Kernel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,2 +1,4 @@
-﻿  mco2_b.c
+﻿  Performing Custom Build Tools
+  mco2_b.c
+D:\_GitRepos\LBYARCH_MCO2\LBYARCH_MCO2\mco2_b.c(22,13): warning C4101: 'temp': unreferenced local variable
   LBYARCH_MCO2.vcxproj -> D:\_GitRepos\LBYARCH_MCO2\x64\Debug\LBYARCH_MCO2.exe
