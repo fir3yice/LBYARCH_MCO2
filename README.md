@@ -1,7 +1,9 @@
 # LBYARCH_MCO2
 ## Overview
 *A screenshot of the specifications is available at the end of the README, [here.](https://github.com/fir3yice/LBYARCH_MCO2?tab=readme-ov-file#others)*
-*Jump to the outputs [here.](https://github.com/fir3yice/LBYARCH_MCO2?tab=readme-ov-file#overview)*
+
+*Jump to the outputs [here.](https://github.com/fir3yice/LBYARCH_MCO2?tab=readme-ov-file#outputs)*
+
 This project implements a mathematical function in C and Assembly (x86-64), and compares the speed at which the two accomplish the calculation task. The mathematical function is calculated as `Z[i] = A * X[i] + Y[i]`, where A is a constant scalar, and X, Y, and Z are all vectors. Vector sizes are 2^20, 24, and 30. Additionally, all values are single precision decimals. 
 
 The comparison methodology was to run each vector size 30 times for both the C kernel/implementation and the x86-64 version, measuring the performance of only the kernels themselves. These values were measured in `ms` and averaged to summarize the data. Additionally, the `Debug` and `Release` build/run options were also compared as part of the assignment. Finally, the C kernel was also used as a sanity check to ensure that the Assembly output was correct.
@@ -24,6 +26,9 @@ Then this process is repeated for the other array sizes (looped automatically)
 
 ## Outputs
 *The consolidated data is fully available [here in this repo.](LBYARCH_MCO2/Compiled_Data.xlsx)*
+
+*Screenshots here[Debug Data](images/Debug_Data.png); [Release Data](images/Release_Data.png)*
+
 ### 1. Comparative execution time and analysis of the performance of the kernels
 #### General Comments
 When the math function is implemented as-is in Assembly, i.e. passing each value one-by-one instead of the entire array, the Assembly turned out to always be slower. This turns out to be an inefficient solution because passing the values one-by-one most likely takes more time and computation (retrieving the value then passing in C) compared to just passing the entire array (its reference), then accessing the memory directly in assembly. The loop being in C also adds some extra overhead, hence the slower Assembly kernel in this version of the project.
