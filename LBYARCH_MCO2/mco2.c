@@ -1,3 +1,6 @@
+// Ong, Camron (S13) | Tan, Arvin (S13)
+// CALLER FOR C AND ASM KERNELS
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
