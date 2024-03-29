@@ -10,6 +10,13 @@ The comparison methodology was to run each vector size 30 times for both the C k
 
 The project does not allow for any user input. The three vector (array) sizes are tested by simply running the C program (caller) as is. The time for each process was also outputted to corresponding text files.
 
+## How to run?
+- Clone the entire repo
+- Open the `.sln` named `LABYARCH_MCO2.sln` in Visual Studio
+- In VS, navigate to `/Source Files`, then `mco2.c`
+- Compile and run under Debug or Release
+- NOTE: the `.nasm` file is built under the programmer's local storage (ie, `C:\nasm\nasm -f win64 asmfunc.asm` and outputting `asmfunc.obj`). The execution path may need changing depending on the storage set-up.
+
 ## General Code Process
 - The code first initializes the variables then begins with the first array size of 2<sup>20</sup>. 
 - Memory is allocated to the arrays X, Y, Z, and Z2 for each iteration of the 30 tests

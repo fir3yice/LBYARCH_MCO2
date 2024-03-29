@@ -1,2 +1,2 @@
 ^D:\_GITREPOS\LBYARCH_MCO2\LBYARCH_MCO2\ASMFUNC.ASM
-D:\_GitRepos\LBYARCH_MCO2\nasm -f win64 asmfunc.asm
+C:\nasm\nasm -f win64 asmfunc.asm
