@@ -69,6 +69,7 @@ The evidence of optimization being turned on can be seen when checking the Proje
 That said, all of these optimizations done by Visual Studio sometimes even causing memory leaks which we experienced due to a mistake in our Assembly kernel. To briefly explain it, each iteration in the 30 runs was slowly using more and more memory. This was not the case in debug mode, which had used a more-or-less constant amount of memory throughout each array size. It turned out to be a mistake in the Assembly kernel, but it was interesting that our computers' memory was slowly being filled without ever getting fully released. A screenshot of this happening, as seen in task manager, is shown below.
 
 Left: Each iteration taking more memory. Right: Memory released after stopping the test (since the PC began to slow down).
+
 <img src="images/Release_MemLeak.png" alt="Release_MemLeak" width="350"/> <img src="images/Release_MemLeak2.png" alt="Release_MemLeak2" width="350"/>
 
 ### 2. Screenshot of program output with the correctness check (C), 3. Screenshot of program output with the correctness check (x86-64)
