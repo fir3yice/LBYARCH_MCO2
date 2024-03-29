@@ -27,10 +27,12 @@ Then this process is repeated for the other array sizes (looped automatically)
 ## Outputs
 *The consolidated data is fully available [here in this repo.](LBYARCH_MCO2/Compiled_Data.xlsx)*
 
-*Screenshots here[Debug Data](images/Debug_Data.png); [Release Data](images/Release_Data.png)*
+*Screenshots [Debug Data](images/Debug_Data.png); [Release Data](images/Release_Data.png)*
+
+[Back to top](https://github.com/fir3yice/LBYARCH_MCO2?tab=readme-ov-file#overview)
 
 ### 1. Comparative execution time and analysis of the performance of the kernels
-#### General Comments
+#### General Comments (Non-Final versions)
 When the math function is implemented as-is in Assembly, i.e. passing each value one-by-one instead of the entire array, the Assembly turned out to always be slower. This turns out to be an inefficient solution because passing the values one-by-one most likely takes more time and computation (retrieving the value then passing in C) compared to just passing the entire array (its reference), then accessing the memory directly in assembly. The loop being in C also adds some extra overhead, hence the slower Assembly kernel in this version of the project.
 
 #### Debug Mode
@@ -66,7 +68,8 @@ The evidence of optimization being turned on can be seen when checking the Proje
 
 That said, all of these optimizations done by Visual Studio sometimes even causing memory leaks which we experienced due to a mistake in our Assembly kernel. To briefly explain it, each iteration in the 30 runs was slowly using more and more memory. This was not the case in debug mode, which had used a more-or-less constant amount of memory throughout each array size. It turned out to be a mistake in the Assembly kernel, but it was interesting that our computers' memory was slowly being filled without ever getting fully released. A screenshot of this happening, as seen in task manager, is shown below.
 
-<img src="images/Release_MemLeak.png" alt="Release_MemLeak" width="350"/>
+Left: Each iteration taking more memory. Right: Memory released after stopping the test (since the PC began to slow down).
+<img src="images/Release_MemLeak.png" alt="Release_MemLeak" width="350"/> <img src="images/Release_MemLeak2.png" alt="Release_MemLeak2" width="350"/>
 
 ### 2. Screenshot of program output with the correctness check (C), 3. Screenshot of program output with the correctness check (x86-64)
 Some sample outputs of the program running are shown below.
