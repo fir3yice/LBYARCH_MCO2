@@ -36,7 +36,7 @@ Then this process is repeated for the other array sizes (looped automatically)
 
 *Screenshots [Debug Data](images/Debug_Data.png); [Release Data](images/Release_Data.png)*
 
-Note: The 2nd column in the C files is the flag - 1 indicates that all the ASM kernel's calculations match that of the C kernel.
+Note: The 2nd column in the C files is the correct flag. 1 indicates that all the ASM kernel's calculations match that of the C kernel and are correct.
 
 [Back to top](https://github.com/fir3yice/LBYARCH_MCO2?tab=readme-ov-file#overview)
 
