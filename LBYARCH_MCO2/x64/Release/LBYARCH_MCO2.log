@@ -1,10 +1,9 @@
-﻿  Performing Custom Build Tools
-  mco2_b.c
-D:\_GitRepos\LBYARCH_MCO2\LBYARCH_MCO2\mco2_b.c(22,13): warning C4101: 'temp': unreferenced local variable
+﻿  mco2.c
+D:\_GitRepos\LBYARCH_MCO2\LBYARCH_MCO2\mco2.c(20,13): warning C4101: 'temp': unreferenced local variable
 asmfunc.obj : warning LNK4042: object specified more than once; extras ignored
   Generating code
-  1 of 8 functions (12.5%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
+  7 of 8 functions (87.5%) were compiled, the rest were copied from previous compilation.
+    3 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   LBYARCH_MCO2.vcxproj -> D:\_GitRepos\LBYARCH_MCO2\x64\Release\LBYARCH_MCO2.exe

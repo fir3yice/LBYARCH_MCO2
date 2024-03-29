@@ -20,7 +20,7 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mco2_b.c">
+    <ClCompile Include="mco2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

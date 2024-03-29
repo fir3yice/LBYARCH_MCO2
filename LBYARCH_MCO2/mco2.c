@@ -8,12 +8,10 @@ extern void asm_domath(long long int n, float a, float x[], float y[], float z[]
 #define RANDMAX 100
 
 int main(int argc, char* argv[]) {
-    //int m = 25; // 20, 24, 30
     int m[3] = { 20, 24, 30 };
     for (int j = 0; j < 3; j++) {
     
-    //int m[1] = { 30 };
-
+    //int m[1] = { 20 };
     //for (int j = 0; j < 1; j++) {
         long long n = 1LL << m[j];
         int correct[30];
@@ -78,6 +76,7 @@ int main(int argc, char* argv[]) {
             for (long long i = 0; i < n; i++) {
                 if (Z[i] != Z2[i]) {
                     printf("Error: Z[%lld] = %f, Z2[%lld] = %f\n", i, Z[i], i, Z2[i]);
+                    correct[count] = 0;
                     error = 1;
                     break;
                 }
@@ -103,12 +102,12 @@ int main(int argc, char* argv[]) {
 
         long aveTime1 = 0;
         long aveTime2 = 0;
-
-        char filename_c[20]; // for C Kernel
-        char filename_asm[20]; // for ASM Kernel
+        
+        char filename_c[20]; 
+        char filename_asm[20]; 
         snprintf(filename_c, sizeof(filename_c), "R_C_Kernel_%d.txt", m[j]);
         snprintf(filename_asm, sizeof(filename_asm), "RR_ASM_Kernel_%d.txt", m[j]);
-
+        
         for (int i = 0; i < max; i++) {
             aveTime1 += time[i][0];
             aveTime2 += time[i][1];
@@ -128,11 +127,9 @@ int main(int argc, char* argv[]) {
         FILE* file_c = fopen(filename_c, "a");
         FILE* file_asm = fopen(filename_asm, "a");
 
-        //FILE* file = fopen("C_Kernel.txt", "a");
         fprintf(file_c, "\nAverage time: %ld ms\n", aveTime1);
         fclose(file_c);
 
-        //FILE* file2 = fopen("ASM_Kernel.txt", "a");
         fprintf(file_asm, "\nAverage time: %ld ms\n", aveTime2);
         fclose(file_asm);
 

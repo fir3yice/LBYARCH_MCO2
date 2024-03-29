@@ -1,6 +1,6 @@
 section .text   
     bits 64
-    default rel ; to handle address relocation
+    default rel 
     global asm_domath
 
 asm_domath:
